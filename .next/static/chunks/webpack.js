@@ -180,7 +180,11 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
+<<<<<<< HEAD
 /******/ 		__webpack_require__.h = function() { return "1ee9cb51c45ed0d9"; }
+=======
+/******/ 		__webpack_require__.h = function() { return "488ae8a6c6478b1c"; }
+>>>>>>> 734bc9c (merging testing branch)
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
