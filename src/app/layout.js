@@ -1,4 +1,6 @@
-import { Plus_Jakarta_Sans, DM_Sans } from 'next/font/google'
+import { Plus_Jakarta_Sans, DM_Sans } from 'next/font/google';
+import "@phosphor-icons/web/light";
+import "@phosphor-icons/web/bold";
 
 export const jakarta = Plus_Jakarta_Sans({
   weight: 'variable',

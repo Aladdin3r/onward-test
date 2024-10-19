@@ -1,5 +1,7 @@
 import '../styles/globals.css';
 import { dm_sans, jakarta } from './layout';
+import { ChakraProvider } from '@chakra-ui/react';
+
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -10,7 +12,9 @@ function MyApp({ Component, pageProps }) {
                     --prompt: ${jakarta.style.fontFamily};
                 }
             `}</style>
-            <Component {...pageProps} />
+            <ChakraProvider>
+                <Component {...pageProps} />
+            </ChakraProvider>
         </>
     );
 }
