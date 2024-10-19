@@ -19,13 +19,8 @@
   --imperial-red: #EA4A4D;
   --canary-yellow: #EAE84A;
   --ocean-blue: #214DDF;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --dm-sans: 'DM Sans', sans-serif;
+  --jakarta: 'Plus Jakarta Sans', sans-serif;
 }
 
 html,
@@ -35,32 +30,22 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: 'dm_sans';
+  font-family: var(--dm-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 h1, h2, h3 {
-  font-family: 'prompt';
+  font-family: var(--prompt);
 }
+
 h1 {
-  font-size: var(--font-size-header1);
+  font-size: var(--font-size-h1);
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.dm_sans {
+  font-family: var(--dm-sans);
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.prompt {
+  font-family: var(--prompt);
 }
